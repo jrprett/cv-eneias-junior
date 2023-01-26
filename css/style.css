@@ -1,3 +1,194 @@
+/*
+#COLOR PROJECT PALLETE
+
+BLUE: #52B3CB
+RED: #B35F5F
+GREEN: #86D988
+BLACK-GREY:#353535
+WHITE: #FAFAFA
+
+*/
+
+/* Global Styles
+---------------------------------------------------*/
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    color: #353535;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
 img{
-    width: 400px;
+    width: 300px;
+}
+a{
+    color:#ffec3d;
+}
+a:hover{
+    text-decoration: none;
+}
+h1{
+    font-size: 50px;
+    line-height: 1;
+}
+h2{
+    font-size: 25px
+}
+h3{
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 0;
+}
+h1, h2{
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+}
+.item-details h3 + p{
+    font-style: italic;
+}
+.item-details h3 ~ p{
+    margin: 0;
+}
+.content-wrap{
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.divider > section{
+    border-bottom: 1px dashed #353535;
+    padding-top: 25px;
+    padding-bottom: 25px; 
+}
+.divider > section:last-of-type{
+    border-bottom: none;
+}
+
+/* Profile
+---------------------------------------------------*/
+header{
+    background-color: #F5F5F5;
+    color:#353535;
+}
+
+/*
+section{
+    width: 500px;
+   display: inline-block;
+}*/
+
+
+/* Projects
+---------------------------------------------------*/
+.projects{
+    background-color:#86D988;
+    color: #FFFFFF;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+.projects a{
+    color:#076609
+}
+
+.projects .btn{
+    color: #FFFFFF;
+    background-color: #076609;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 3px;
+    display: inline-block;
+}
+.projects .btn:hover{
+    background-color: rgb(7, 102, 9, 0.8);
+}
+
+.project-item{
+    overflow: hidden;  
+}
+.project-item h3{
+    margin-top: 0;
+}
+
+
+
+/* Work Experience
+---------------------------------------------------*/
+.work-experience{
+    background-color:#52B3CB;
+    color: #FFFFFF;
+}
+
+
+/* Education
+---------------------------------------------------*/
+.education{
+    background-image: url(../images/sharon-mccutcheon-unsplash.jpg);
+    background-size: cover;
+    background-position: top left;
+    padding-bottom: 50px;
+    color: #353535;
+}
+.education p, h3{
+    width: 60%;
+}
+
+/* Contact info
+---------------------------------------------------*/
+
+footer{
+    background-color: #353535;
+    color: #FFFFFF;
+}
+
+.contact-list{
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-list a{
+    padding: 15px;
+    display: inline-block;
+}
+
+/* Responsive
+---------------------------------------------------*/
+
+@media screen and (min-width: 750px){
+    header, footer{
+        text-align: center;
+    }
+    .project-item img{
+        float: left;
+        margin-right: 20px;
+    }
+    .job-item{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+        row-gap: 10px;
+    }
+    .contact-list{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 749px){
+    h1{
+        font-size: 40px; 
+        margin-bottom: 10px;
+    }
+    .contact-list a{
+        padding: 5px;
+    }
+    
 }

@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EJ Portifolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -12,104 +15,124 @@
   <main>
     <!-- ***********************  ABOUT / PROFILE  *********************** -->
     <header>
-      <h1>Eneias Júnior</h1>
-      <h2>Electrical Engineer | UI Designer | Front-end developer</h2>
+      <div class="content-wrap">
+        <h1>Eneias Júnior</h1>
+        <h2>Front-end developer | UI Designer </h2>
 
-      <p>I am searching for a new opportunity to keep improving my skills and discovering new ones. In my last job I
-        have developed UI skills, hence I am interested in working as UI/UX Designer or as another role in a PO team.
-        Nowadays, I am studying front-end programming (HTML, CSS, JS and frameworks) because I would like to tie my UI
-        knowledges with it, then, I am open for an front-end developer opportunity as well. </p>
-      <p>This site portifolio is the beginning of the practical journey!</p>
+        <p>I am searching for a new opportunity to keep improving my skills and discovering new ones. In my last job I
+          have developed UI skills, hence I am interested in working as UI/UX Designer or as another role in a PO team.
+          Nowadays, I am studying front-end programming (HTML, CSS, JS and frameworks) because I would like to tie my UI
+          knowledges with it, then, I am open for an front-end developer opportunity as well. </p>
+        <p>This site portifolio is the beginning of the practical journey!</p>
+      </div>
     </header>
 
     <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
-    <section>
-      <h2>Featured Projects</h2>
-      <p>View selected projects below. More information can be found at <a href="https://github.com/jrprett">my personal
-          github</a>.</p>
+    <section class="projects">
+      <div class="content-wrap divider">
+        <h2>Featured Projects</h2>
+        <p>View selected projects below. More information can be found at <a href="https://github.com/jrprett">my personal
+            github</a>.</p>
 
-      <!-- Copy the whole <section> block to add more projects. -->
-      <section>
-        <h3>Portifolio Site</h3>
-        <img src="images/project-courses.jpg" alt="Example image of the Course">
-        <p>Summary or description of the project and/or your role in it. Add as many paragraphs as you need.</p>
-        <a href="#" target="_blank">View project / case study</a>
-      </section>
-      <section>
-        <h3>GLE Marble Site</h3>
-        <img src="images/project-wire-ipsum.jpg" alt="Example image of the Course">
-        <p>Summary or description of the project and/or your role in it. Add as many paragraphs as you need.</p>
-        <a href="#" target="_blank">View project / case study</a>
-      </section>
+        <!-- Copy the whole <section> block to add more projects. -->
+
+        <section class="project-item">
+          <img src="images/project-courses.jpg" alt="Example image of the Course">
+          <h3>Portifolio Site</h3>
+          <p>Summary or description of the project and/or your role in it. Add as many paragraphs as you need.</p>
+          <a class="btn" href="#" target="_blank">View project / case study</a>
+        </section>
+        <section class="project-item">
+          <img src="images/project-wire-ipsum.jpg" alt="Example image of the Course">
+          <h3>GLE Marble Site</h3>
+          <p>Summary or description of the project and/or your role in it. Add as many paragraphs as you need.</p>
+          <a class="btn" href="#" target="_blank">View project / case study</a>
+        </section>
+      </div>
       <!-- End of Project block. -->
     </section>
 
     <!-- ***********************  WORK EXPERIENCE  *********************** -->
-    <section>
-      <h2>Work Experience</h2>
-      <p>Optional paragraph for work experience summary. Not a part of the job details. Delete if not being used.</p>
+    <section class="work-experience">
+      <div class="content-wrap item-details divider">
+        <h2>Work Experience</h2>
+        <p>Optional paragraph for work experience summary. Not a part of the job details. Delete if not being used.</p>
 
-      <!-- Copy this whole <section> block to add more jobs. -->
-      <section>
-        <h3>Digital Hub Intern</h3>
-        <p>Buckman Laboratories</p>
-        <p>Jan/2022 - Dec/2022</p>
-        <p>Job summary goes here. Add as many paragraphs as you need.</p>
-        <p>Here are the main activities:</p>
-        <ul>
-          <li>Supported PO team doing mockups and prototypes for new web and mobile based projects on Figma;</li>
-          <li>Quality Assurance: documented and reported bugs on JIRA; Analyzed data to confirm right communication
-            between sensors, controller and the gateway;</li>
-          <li>Developed guides to be used on Microsoft Hololens device using Dynamics Guides 365;</li>
-          <li>Supported the NR13 assets management to attend the mechanical integrity of Pressure Vessels and Boilers;
-          </li>
-          <li>Communicated in English everyday - reading, writing and speaking.</li>
-        </ul>
-      </section>
-      <section>
-        <h3>Electrical Test Engineer Intern</h3>
-        <p>Bosch Brazil</p>
-        <p>Sep/2020 - Dec/2021</p>
-        <p>Job summary goes here. Add as many paragraphs as you need.</p>
-        <p>Here are the main activities:</p>
-        <ul>
-          <li>Executed tests in electrical DC motors: wiper and actuator systems; </li>
-          <li>Developed and debugged Arduino codes for testings;</li>
-          <li>Managed the equipment’s list that needed calibration;</li>
-          <li>Developed and reviewed technical reports.</li>
-        </ul>
-      </section>
-      <!-- End of Job block. -->
+        <!-- Internship 1 -->
+
+        <section class="job-item">
+          <div class="job-details">
+            <h3>Digital Hub Intern</h3>
+            <p>Buckman Laboratories</p>
+            <p>Jan/2022 - Dec/2022</p>
+          </div>
+          <div class="job-summary">
+            <p>Job summary goes here. Add as many paragraphs as you need.</p>
+            <p>Here are the main activities:</p>
+            <ul>
+              <li>Supported PO team doing mockups and prototypes for new web and mobile based projects on Figma;</li>
+              <li>Quality Assurance: documented and reported bugs on JIRA; Analyzed data to confirm right communication
+                between sensors, controller and the gateway;</li>
+              <li>Developed guides to be used on Microsoft Hololens device using Dynamics Guides 365;</li>
+              <li>Supported the NR13 assets management to attend the mechanical integrity of Pressure Vessels and Boilers;
+              </li>
+              <li>Communicated in English everyday - reading, writing and speaking.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Internship 2 -->
+
+        <section class="job-item">
+          <div class="job-details">
+            <h3>Electrical Test Engineer Intern</h3>
+            <p>Bosch Brazil</p>
+            <p>Sep/2020 - Dec/2021</p>
+          </div>
+          <div class="job-summary">
+            <p>Job summary goes here. Add as many paragraphs as you need.</p>
+            <p>Here are the main activities:</p>
+            <ul>
+              <li>Executed tests in electrical DC motors: wiper and actuator systems; </li>
+              <li>Developed and debugged Arduino codes for testings;</li>
+              <li>Managed the equipment’s list that needed calibration;</li>
+              <li>Developed and reviewed technical reports.</li>
+            </ul>
+          </div>
+        </section>
+        <!-- End of Job block. -->
+      </div>
     </section>
 
     <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
-    <section>
-      <h2>Education</h2>
+    <section class="education">
+      <div class="content-wrap item-details">
+        <h2>Education</h2>
 
-      <!-- Copy this whole <section> block to add more schools. -->
-      <section>
-        <h3>University of Campinas - Campinas, SP, Brazil</h3>
-        <p>Bachelor in Electrical Engineer, Mar/2016 - Dec/2022</p>
-        <p>Summary or accomplishments.</p>
-      </section>
-      <section>
-        <h3>Federal Institute of Espírito Santo - Cachoeiro de Itapemirim, ES, Brazil</h3>
-        <p>High school and Electromechanics Technician Course, Mar/2011 - Dec/2014</p>
-        <p>Summary or accomplishments.</p>
-      </section>
-
+        <!-- Copy this whole <section> block to add more schools. -->
+        <section>
+          <h3>University of Campinas - Campinas, SP, Brazil</h3>
+          <p>Bachelor in Electrical Engineer, Mar/2016 - Dec/2022</p>
+        </section>
+        <section>
+          <h3>Federal Institute of Espírito Santo - Cachoeiro de Itapemirim, ES, Brazil</h3>
+          <p>High school and Electromechanics Technician Course, Mar/2011 - Dec/2014</p>
+        </section>
+      </div>
     </section>
 
     <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
     <footer>
-      <h2>Let's Keep in Touch!</h2>
+      <div class="content-wrap">
+        <h2>Let's Keep in Touch!</h2>
 
-      <!-- Social media and contact links. Add or remove any networks. -->
-      <ul>
-        <li><a href="mailto:email@example.com">jrprett@gmail.com</a></li>
-        <li><a href="https://github.com/jrprett" target="_blank">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/eneias-junior/" target="_blank">LinkedIn</a></li>
-      </ul>
+        <!-- Social media and contact links. Add or remove any networks. -->
+        <ul class="contact-list">
+          <li><a href="mailto:email@example.com">jrprett@gmail.com</a></li>
+          <li><a href="https://github.com/jrprett" target="_blank">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/eneias-junior/" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
     </footer>
   </main>
 </body>
